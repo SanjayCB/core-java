@@ -1,0 +1,101 @@
+Question 1:-  package com.xworkz.app;
+
+public class FindMinMax {
+     void maximun(int []a,int as)
+	{
+    	 int i;
+    	 int max=a[0];
+    	 
+		for(i=0;i<as;i++)
+		{
+				if(a[i]>max)
+				{
+					max=a[i];
+				}		
+		}
+			
+			System.out.println("the maximinum number is "+max);
+			
+	}
+     void minimun(int []a,int as)
+ 	{
+     	 int i;
+     	 int max=a[0];
+     	 
+ 		for(i=0;i<as;i++)
+ 		{
+ 				if(a[i]<max)
+ 				{
+ 					max=a[i];
+ 				}	
+ 		}
+ 			
+ 			System.out.println("the minimum number is "+max);
+ 	}
+ 			
+	public static void main(String[] args) {
+		int a[]= {45,333,76,23,474,654,29,454};
+		 FindMinMax f=new FindMinMax();
+		 f.maximun(a,a.length);
+		 f.minimun(a,a.length);
+		 
+
+	}
+
+}
+
+
+
+Question2:-  package com.xworkz.app;
+
+public class InLoveOddEven {
+	public boolean love(int flower1,int flower2 )
+	{
+		boolean inlove=false;
+		if(flower1%2==0 && flower2%2==0)
+		{
+			
+			inlove=true;
+		}
+			
+		return inlove;
+	}
+
+	public static void main(String[] args) {
+		 
+		InLoveOddEven in=new InLoveOddEven();
+		System.out.println("In love "+in.love(2,2));
+
+	}
+
+}
+
+
+Question 4:-a):- by making the class constructor private.
+            b):- java.lang.String,  java.lang.Math are final classes.
+            c):- Deligates can be an alternative to inheritance.
+
+Question 5:- A Set that maintains its elements in ascending order, sorted according to the elements' natural ordering or according to a Comparator provided at SortedSet creation time.
+
+Question 6:- Array List:- 1) ArrayList internally uses a dynamic array to store the elements.	
+2) Manipulation with ArrayList is slow because it internally uses an array. If any element is removed from the array, all the other elements are shifted in memory.	
+3) An ArrayList class can act as a list only because it implements List only.	
+4) ArrayList is better for storing and accessing data.
+5) The memory location for the elements of an ArrayList is contiguous.	
+
+Linked List
+1)LinkedList internally uses a doubly linked list to store the elements.
+2)Manipulation with LinkedList is faster than ArrayList because it uses a doubly linked list, so no bit shifting is required in memory.
+3)LinkedList class can act as a list and queue both because it implements List and Deque interfaces.
+4)LinkedList is better for manipulating data.
+5)The location for the elements of a linked list is not contagious.
+
+Question 7:-ListIterator:-ListIterator can help to replace an element whereas Iterator cannot.
+            Iterator    :-Iterator can traverse only in forward direction whereas ListIterator traverses both in forward and backward directions.
+
+Question 8:-The covariant method overriding approach, implemented in Java 5, helps to remove the client-side typecasting by enabling you to return a subtype of the overridden method's actual return type. Covariant Method overriding means that when overriding a method in the child class, the return type may vary.
+
+Question 10:-static polymorphism:- when there are multipal functions with same name but different in parameters the thes functions are said to be overloading
+             Dynamic polymorphism:-if sub class has the same method as declaried in the parent class with the same parameter is said to be override
+
+
